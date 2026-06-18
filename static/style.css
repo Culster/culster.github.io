@@ -22,15 +22,18 @@ a {
 #header {
     display: grid;
     grid-template-rows: auto auto;
-    margin: 10px;
-    padding: 5px;
 }
 #navigation {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 20px;
-    padding: 30px;
+    align-content: center;
 }
 #navigation div p {
     text-align: center;
+}
+
+/* PostPage */
+
+#mdcontent {
+    padding-top: 10px;
 }
