@@ -4,6 +4,54 @@
         <title>Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/static/style.css">
+        
+<script>
+function starter() {
+    const postone = document.getElementById("postonetitle").textContent;
+    const postonelink = document.getElementById("postonelink");
+    const posttwo = document.getElementById("posttwotitle").textContent;
+    const posttwolink = document.getElementById("posttwolink");
+    const postthree = document.getElementById("postthreetitle").textContent;
+    const postthreelink = document.getElementById("postthreelink");
+    const postfour = document.getElementById("postfourtitle").textContent;
+    const postfourlink = document.getElementById("postfourlink");
+    const postfive = document.getElementById("postfivetitle").textContent;
+    const postfivelink = document.getElementById("postfivelink");
+    const postsix = document.getElementById("postsixtitle").textContent;
+    const postsixlink = document.getElementById("postsixlink");
+
+    if(postone=="None") {
+        postonelink.setAttribute("href", "/post/miscellaneous/nolink.html")
+        postonelink.style.display = "none";
+    };
+    if(posttwo=="None") {
+        posttwolink.setAttribute("href", "/post/miscellaneous/nolink.html")
+        posttwolink.style.display = "none";
+    };
+    if(postthree=="None") {
+        postthreelink.setAttribute("href", "/post/miscellaneous/nolink.html")
+        postthreelink.style.display = "none";
+    };
+    if(postfour=="None") {
+        postfourlink.setAttribute("href", "/post/miscellaneous/nolink.html")
+        postfourlink.style.display = "none";
+    };
+    if(postfive=="None") {
+        postfivelink.setAttribute("href", "/post/miscellaneous/nolink.html")
+        postfivelink.style.display = "none";
+    };
+    if(postsix=="None") {
+        postsixlink.setAttribute("href", "/post/miscellaneous/nolink.html")
+        postsixlink.style.display = "none";
+    };
+
+    console.log("LOLOLOLOLOLOLOL");
+};
+window.onload = function() {
+    starter();
+};
+</script>
+
     </head>
     <body>
         <div class="block" id="headerblock">
@@ -16,10 +64,10 @@
                     <a href="/">Home</a>
                 </div>
                 <div>
-                    <a href="/about.html">About</a>
+                    <a href="/shelf/">Shelf</a>
                 </div>
                 <div>
-                    <a href="/portofolio.html">Portofolio</a>
+                    <a href="/about.html">About</a>
                 </div>
             </div>
         </div>
@@ -29,11 +77,60 @@
     <h3>
         What's New?
     </h3>
+    <div id="sixfirstnew">
+        <div class="blockinside">
+            <h4 id="postonetitle">try</h4>
+            <div class="previewandlink">
+                <p>## Try
+
+lol</p>
+                <a id="postonelink" href="/post/miscellaneous/try.html">read more >>></a>
+            </div>
+        </div>
+        <div class="blockinside">
+            <h4 id="posttwotitle">None</h4>
+            <div class="previewandlink">
+                <p>Wait for this dude to write more ....</p>
+                <a id="posttwolink" href="/post/miscellaneous/nolink.html">read more >>></a>
+            </div>
+        </div>
+        <div class="blockinside">
+            <h4 id="postthreetitle">None</h4>
+            <div class="previewandlink">
+                <p>Wait for this dude to write more ....</p>
+                <a id="postthreelink" href="/post/miscellaneous/nolink.html">read more >>></a>
+            </div>
+        </div>
+        <div class="blockinside">
+            <h4 id="postfourtitle">None</h4>
+            <div class="previewandlink">
+                <p>Wait for this dude to write more ....</p>
+                <a id="postfourlink" href="/post/miscellaneous/nolink.html">read more >>></a>
+            </div>
+        </div>
+        <div class="blockinside">
+            <h4 id="postfivetitle">None</h4>
+            <div class="previewandlink">
+                <p>Wait for this dude to write more ....</p>
+                <a id="postfivelink" href="/post/miscellaneous/nolink.html">read more >>></a>
+            </div>
+        </div>
+        <div class="blockinside">
+            <h4 id="postsixtitle">None</h4>
+            <div class="previewandlink">
+                <p>Wait for this dude to write more ....</p>
+                <a id="postsixlink" href="/post/miscellaneous/nolink.html">read more >>></a>
+            </div>
+        </div>
+    </div>
     <div>
-        Nothing yet.
+        <h3 style="text-align: right;"><a href="/posts.html">Lihat postingan yang lain >>></a></h3>
     </div>
 </div>
 
+        </div>
+        <div class="block" style="text-align: right;">
+            Made by <a href="/about.html">Effendy Culster</a>
         </div>
     </body>
 </html>

@@ -32,6 +32,21 @@ a {
     text-align: center;
 }
 
+/* homepage */
+
+#sixfirstnew {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.previewandlink {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.previewandlink a {
+    align-content: center;
+    text-align: right;
+}
+
 /* PostPage */
 
 #mdcontent {
