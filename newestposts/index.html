@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newestpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/style.css">
+        
+<script>
+    function everyposts() {
+        const posts = [{"category": "Slacker in Another World", "content": "---\ntitle: Kok Aku!?\ntimestamp: 24-06-2026\n---\n\u0026emsp;Tidak bisa aku bayangkan bahwa aku kembali lagi ke sini.\n\u0026emsp;Tidak, ma...", "fulllinkcomparison": "C:/Users/effen/Documents/Projects/Script/Github Blog/myblog/markdowns/Slacker in Another World/Chapter 1.md", "link": "Chapter 1", "title": "Chapter 1.md"}, {"category": "miscellaneous", "content": "---\ntitle: Try\ntimestamp: 26-06-2026\n---\nLol...", "fulllinkcomparison": "C:/Users/effen/Documents/Projects/Script/Github Blog/myblog/markdowns/miscellaneous/try.md", "link": "try", "title": "try.md"}];
+        console.log(posts)
+        for(let i = 0; i<posts.length; i++) {
+            const nplelement = document.getElementById("newestpostslist");
+            
+            const blockinside = document.createElement("div");
+            blockinside.classList.add("blockinside");
+
+            const posttitle = document.createElement("h4");
+            posttitle.textContent = posts[i]["title"];
+
+            const previewandlink = document.createElement("div");
+
+            const preview = document.createElement("p");
+            preview.textContent = posts[i]["content"];
+
+            const link = document.createElement("a");
+            const story = encodeURIComponent(posts[i]['category']);
+            const chapter = encodeURIComponent(posts[i]['link']);
+            link.setAttribute("href", `/shelf/${story}/${chapter}.html`);
+            link.textContent = "read more >>>";
+
+            /* add preview and link to previewandlink */
+            previewandlink.appendChild(preview);
+            previewandlink.appendChild(link);
+
+            /* add previewandlink and posttitle to blockinside and then to newestpostslist */
+            blockinside.appendChild(posttitle);
+            blockinside.appendChild(previewandlink);
+
+            nplelement.appendChild(blockinside);
+        }
+    }
+    window.onload = function() {
+        everyposts();
+    }
+</script>
+
+    </head>
+    <body>
+        <div class="block" id="headerblock">
+            <div id="header">
+                <h1>Culsterian Writing</h1>
+                <p>Culster write this, and that, and yeah, that in the back, too.</p>
+            </div>
+            <div class="block" id="navigation">
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                <div>
+                    <a href="/shelf/">Shelf</a>
+                </div>
+                <div>
+                    <a href="/about.html">About</a>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            
+    <div id="newestpostslist"></div>
+
+        </div>
+        <div class="block" style="text-align: right;">
+            Made by <a href="/about.html">Effendy Culster</a>
+        </div>
+    </body>
+</html>

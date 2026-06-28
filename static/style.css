@@ -1,3 +1,6 @@
+html {
+    font-size: large;
+}
 body {
     background-color: #000000;
     color: #ffffff;
@@ -6,7 +9,7 @@ a {
     color: #ffffff
 }
 .block {
-    background-color: #0f0f77;
+    background-color: #000031;
     margin: 10px;
     padding: 20px;
 }
@@ -47,8 +50,17 @@ a {
     text-align: right;
 }
 
-/* PostPage */
+/* storychapter */
 
-#mdcontent {
-    padding-top: 10px;
+#chaptercontent {
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.5;
+}
+
+/* postpage */
+
+#newestpostslist {
+    display: grid;
+    grid-template-rows: auto;
 }
